@@ -20,7 +20,7 @@ def write():
     # Everytime the form is being submitted due to a key press, this post method is getting triggered agaib
     # and again.
     # Once the user stops typing, the last triggered post method executes the time.sleep code snippet
-    # and everything written disappears.
+    # and everything written disappears. after 3 second.
     if request.method == 'POST':
         time.sleep(3)
         # return redirect('/write')
