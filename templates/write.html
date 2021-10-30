@@ -1,0 +1,27 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Disappearing Text Writing App{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/writestyles.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <div class="container">
+
+      <div class = "editor">
+
+          <form class = "text_form" action = "" method="post">
+          <textarea id = "writetext" value = "Digdig" rows="10" placeholder="Start typing..."
+                    spellcheck="false" name="writetext" onkeypress="this.form.submit()"></textarea>
+
+              </form>
+      </div>
+
+  <a class="btn btn-warning btn-lg" href="{{url_for('write')}}" role="button">Start Writing Again</a>
+</div>
+    </div>
+
+{% endblock %}

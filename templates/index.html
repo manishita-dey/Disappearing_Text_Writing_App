@@ -1,0 +1,21 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Disappearing Text Writing App{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/styles.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <div class="container">
+  <h1 class="display-4">Disappearing Text Writing App</h1>
+  <p class="lead">Facing Writer's block? Unblock your mind here!</p>
+  <hr class="my-4">
+  <p>Once you start writing, DO NOT stop or everything you have written will disappear.</p>
+  <a class="btn btn-warning btn-lg" href="{{url_for('write')}}" role="button">Start Writing</a>
+</div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+/* This CSS file will need to be added to the styling of
+your web pages for the styles to be rendered. */
+
+body {
+background-color: #333;
+color: white;
+}
+
+a {
+    color: #ffc107;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  color: green;
+  background-color: #f8f4e8;
+}
+
+.space-above {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.editor{
+    height: calc(100% - 210px);
+    margin-top: 80px;
+    position: relative;
+    line-height: 1.65;
+    font-size: 14pt;
+}
+
+.editor textarea{
+    display: block;
+    overflow: auto;
+    width: calc(100% - 30px);
+    padding: 0;
+    height: 100%;
+    margin: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    line-height: 1.65;
+    font-family: Montserrat;
+    caret-color: red;
+    font-size: 14pt;
+    resize: none;
+}

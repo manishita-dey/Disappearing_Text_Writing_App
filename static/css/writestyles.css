@@ -1,0 +1,71 @@
+/* This CSS file will need to be added to the styling of
+your web pages for the styles to be rendered. */
+
+body {
+background-color: #f8f4e8;
+color: white;
+}
+
+a {
+    color: #ffc107;
+}
+
+.jumbotron {
+  /*display: flex;*/
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  color: green;
+  background-color: #f8f4e8;
+}
+
+/*.space-above {
+    margin-top: 20px;
+    padding-top: 20px;
+}*/
+
+
+.editor{
+    height: calc(100% - 210px);
+    margin-top: 80px;
+    position: relative;
+    line-height: 1.65;
+    font-size: 14pt;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+textarea{
+    display: block;
+    overflow: auto;
+    width: calc(100% - 30px);
+    padding: 0;
+    height:auto;
+    margin: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    line-height: 1.65;
+    font-family: Montserrat;
+    caret-color: red;
+    font-size: 14pt;
+    resize: vertical;
+    transition: all .1s linear;
+    text-rendering: auto;
+}
+
+/*textarea{
+    overflow: auto;
+    height = 100%;
+    resize: vertical;
+    text-rendering: auto;
+}*/
+
+.wordcount {
+    position: fixed;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+    opacity: .4;
+}
