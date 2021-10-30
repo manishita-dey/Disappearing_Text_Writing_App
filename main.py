@@ -16,8 +16,8 @@ def home():
 @app.route('/write', methods = ['GET', 'POST'])
 def write():
 
-    # Onpresskey in the form tag in write.html submits the form each time any key is pressed.
-    # Everytime the form is being submitted due to a key press, this post method is getting triggered agaib
+    # onkeypress = this.form.submit() in the form tag in write.html submits the form each time any key is pressed.
+    # Everytime the form is being submitted due to a key press, this post method is getting triggered again
     # and again.
     # Once the user stops typing, the last triggered post method executes the time.sleep code snippet
     # and everything written disappears. after 3 second.
